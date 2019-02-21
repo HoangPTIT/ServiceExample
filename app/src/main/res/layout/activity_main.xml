@@ -8,7 +8,7 @@
         tools:context=".MainActivity">
 
     <Button
-            android:text="btn_start"
+            android:text="Play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_start" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -16,7 +16,7 @@
             app:layout_constraintEnd_toStartOf="@+id/btn_stop" android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.586"/>
     <Button
-            android:text="btn_stop"
+            android:text="Stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_stop" android:layout_marginTop="16dp"

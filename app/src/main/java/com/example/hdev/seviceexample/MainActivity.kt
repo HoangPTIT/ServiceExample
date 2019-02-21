@@ -32,17 +32,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        val intent = Intent(baseContext, AppService::class.java)
+//        val intent = Intent(baseContext, AppService::class.java)
+        val intent = Intent(baseContext, PlaySongService::class.java)
         if (v == null) return
         when (v.id) {
             R.id.btn_start -> {
-//                startService(intent)
-                bindService(intent, conn, Context.BIND_AUTO_CREATE) // BoundService
+                startService(intent)
+//                bindService(intent, conn, Context.BIND_AUTO_CREATE) // BoundService
             }
 
             R.id.btn_stop -> {
-//                stopService(Intent(baseContext, AppService::class.java))
-                unbindService(conn)
+                stopService(Intent(baseContext, PlaySongService::class.java))
+//                unbindService(conn)
             }
         }
     }
